@@ -1,4 +1,5 @@
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.Button?>
@@ -20,50 +21,59 @@
      />
 
 
-<TableView fx:id="table" GridPane.columnIndex="0" GridPane.rowIndex="1">
-           <columns>
-                <TableColumn text = "Name" prefWidth = "100">
+<TableView fx:id="table" editable="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <columns>
+                <TableColumn fx:id="name" text = "Name" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "name"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Sunday" prefWidth = "100">
+                <TableColumn fx:id="sunday" text = "Sunday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "sunday"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Monday" prefWidth = "100">
+                <TableColumn fx:id="monday" text = "Monday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "monday"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Tuesday" prefWidth = "100">
+                <TableColumn fx:id="tuesday" text = "Tuesday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "tuesday"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Wednesday" prefWidth = "100">
+                <TableColumn fx:id="wednesday" text = "Wednesday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "wednesday"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Thursday" prefWidth = "100">
+                <TableColumn fx:id="thursday" text = "Thursday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "thursday"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Friday" prefWidth = "100">
+                <TableColumn fx:id="friday" text = "Friday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "friday"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn text = "Saturday" prefWidth = "100">
+                <TableColumn fx:id="saturday" text = "Saturday" prefWidth = "100">
                     <cellValueFactory>
                         <PropertyValueFactory property = "saturday"/>
                     </cellValueFactory>
                 </TableColumn>
-           </columns>
-
+    </columns>
 </TableView>
 
+
+<VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="CENTER">
+    <children>
+        <Button text="Add Employee" prefWidth = "150" prefHeight = "35"/>
+        <Button text="Delete Employee" prefWidth = "150" prefHeight = "35"/>
+        <Button text="Add Duty" prefWidth = "150" prefHeight = "35"/>
+        <Button text="Delete Duty" prefWidth = "150" prefHeight = "35"/>
+        <Button text="Search Employee" prefWidth = "150" prefHeight = "35"/>
+    </children>
+</VBox>
 </GridPane>
