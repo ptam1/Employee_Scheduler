@@ -1,4 +1,3 @@
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.TableView?>
@@ -21,7 +20,7 @@
      />
 
 
-<TableView fx:id="table" editable="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+<TableView fx:id="schedule" editable="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
                <columns>
                 <TableColumn fx:id="name" text = "Name" prefWidth = "100">
                     <cellValueFactory>
@@ -69,7 +68,7 @@
 
 <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="CENTER">
     <children>
-        <Button text="Add Employee" prefWidth = "150" prefHeight = "35"/>
+        <Button text="Add Employee" prefWidth = "150" prefHeight = "35" onAction="#addEmployee"/>
         <Button text="Delete Employee" prefWidth = "150" prefHeight = "35"/>
         <Button text="Add Duty" prefWidth = "150" prefHeight = "35"/>
         <Button text="Delete Duty" prefWidth = "150" prefHeight = "35"/>

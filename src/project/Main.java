@@ -17,10 +17,9 @@ public class Main extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
-
         Pane pane = FXMLLoader.load(getClass().getResource("project.fxml"));
         stage.setTitle("Employee Scheduler");
-        stage.setScene(new Scene(pane));
+        stage.setScene(new Scene(pane, 1000, 475));
         stage.show();
     }
 
