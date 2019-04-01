@@ -69,9 +69,9 @@
 <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="CENTER">
     <children>
         <Button text="Add Employee" prefWidth = "150" prefHeight = "35" onAction="#addEmployee"/>
-        <Button text="Delete Employee" prefWidth = "150" prefHeight = "35"/>
-        <Button text="Add Duty" prefWidth = "150" prefHeight = "35"/>
-        <Button text="Delete Duty" prefWidth = "150" prefHeight = "35"/>
+        <Button text="Delete Employee" prefWidth = "150" prefHeight = "35" onAction="#deleteEmployee"/>
+        <Button text="Add Duty" prefWidth = "150" prefHeight = "35" onAction="#addDuty"/>
+        <Button text="Delete Duty" prefWidth = "150" prefHeight = "35" onAction="#deleteDuty"/>
         <Button text="Search Employee" prefWidth = "150" prefHeight = "35"/>
     </children>
 </VBox>

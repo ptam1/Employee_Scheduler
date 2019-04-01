@@ -14,23 +14,65 @@ import javafx.scene.control.TableView;
 
 public class Controller
 {
-    @FXML
-    private TableView<Schedule> schedule;
+//    @FXML
+  //  private TableView<Schedule> schedule;
 
 
 
 
     /* Dialog box appears when user presses 'Add Employee'
-     and his/her input is inserted the drop down menu and database */
+     and the employee's name is inserted in the schedule and database
+    */
     @FXML
     public void addEmployee()
     {
-    TextInputDialog dialog = new TextInputDialog();
-    dialog.setTitle("Add Employee");
-    dialog.setHeaderText(null);
-    dialog.setContentText("Name: ");
-    Optional<String> input = dialog.showAndWait();
+        TextInputDialog dialogBox = new TextInputDialog();
+        dialogBox.setTitle("Add Employee");
+        dialogBox.setHeaderText(null);
+        dialogBox.setContentText("Name: ");
+        Optional<String> input = dialogBox.showAndWait();
     }
-    
+
+    /* Dialog box appears when user presses 'Delete Employee'
+    and the employee's name is removed from the schedule and database
+    */
+    @FXML
+    public void deleteEmployee()
+    {
+        TextInputDialog dialogBox = new TextInputDialog();
+        dialogBox.setTitle("Delete Employee");
+        dialogBox.setHeaderText(null);
+        dialogBox.setContentText("Name: ");
+        Optional<String> input = dialogBox.showAndWait();
+    }
+
+    /* Dialog box appears when user presses 'Add Duty'
+    and the employee's duty is added to the schedule and database
+    */
+    @FXML
+    public void addDuty()
+    {
+        TextInputDialog dialogBox = new TextInputDialog();
+        dialogBox.setTitle("Add Employee's Duty");
+        dialogBox.setHeaderText(null);
+        dialogBox.setContentText("Duty: ");
+        Optional<String> input = dialogBox.showAndWait();
+    }
+
+    /* Dialog box appears when user presses 'Delete Duty'
+    and the employee's duty is removed from the schedule and database
+    */
+    @FXML
+    public void deleteDuty()
+    {
+        TextInputDialog dialogBox = new TextInputDialog();
+        dialogBox.setTitle("Delete Employee's Duty");
+        dialogBox.setHeaderText(null);
+        dialogBox.setContentText("Duty: ");
+        Optional<String> input = dialogBox.showAndWait();
+    }
+
+
+
 }
 
